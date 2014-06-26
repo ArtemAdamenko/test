@@ -1,0 +1,45 @@
+<?php
+//начало теста
+	if (!$_POST){
+		
+		Yii::app()->session['current'] = 0;
+	}else{
+
+		//если пришел ответ от формы, берем следующий вопрос
+		$temp = Yii::app()->session['current'];
+		$temp2 = Yii::app()->session['current'];
+		$temp++;
+		$tmp_data = explode(":", $_POST[$temp]);
+		//Yii::app()->session[Yii::app()->session['current']] = $tmp_data;
+		Yii::app()->request->cookies[Yii::app()->session['current']] = new CHttpCookie(Yii::app()->session['current'], $_POST[$temp]);
+ 		echo Yii::app()->request->cookies[0]->value;
+		if ($temp >= count($data)){
+			for ($i = 0; $i < 10; $i++){
+				echo Yii::app()->request->cookies[$i]->value;		
+			}
+			//$this->redirect($this->createUrl('final'));
+		}else{
+
+			Yii::app()->session['current'] = $temp;
+		}
+	}
+	$current = $data[Yii::app()->session['current']];
+
+?>
+
+<h3><?php echo $current['title']?></h3>
+
+<form action="" method="POST">
+	<?php
+	//вывод всех ответов на вопрос
+	$answers = $current['answers'];
+
+	foreach($answers as $k=>$v){
+
+		echo "<input type='radio' value = '".$v['id'].":".$v['accept']."' name='".$current['id']."'>".$v['text']."<br>";
+	}
+	?>
+	<br>
+	<input type="submit" value="Next">
+	
+</form>

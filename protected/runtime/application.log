@@ -1,0 +1,1220 @@
+2014/05/21 14:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=gii
+---
+2014/05/21 14:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=admin
+---
+2014/05/21 14:07:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/default".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=admin/default
+---
+2014/05/21 14:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/default/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=admin/default/index
+---
+2014/05/21 14:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/default/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=admin/default/index
+---
+2014/05/21 14:08:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/default/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=admin/default/index
+---
+2014/05/21 14:14:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /var/www/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/test/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/test/index.php?r=gii
+---
+2014/05/21 14:14:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /var/www/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/test/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/test/index.php?r=gii
+---
+2014/05/21 14:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "Admin/Admin/default/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/Admin/def...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=Admin/Admin/default/index
+HTTP_REFERER=http://localhost/test/index.php?r=Admin/default/index
+---
+2014/05/21 15:51:46 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "LoginForm.Имя пользователя".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(2529): CComponent->__get('?????? ????????...')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), '?????? ????????...')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), '?????? ????????...', Array)
+#3 /var/www/yii/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), '?????? ????????...', Array)
+#4 /var/www/test/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), '?????? ????????...')
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/test/p...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/test/p...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/test/p...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /var/www/test/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/test/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/test/index.php?r=site/login
+HTTP_REFERER=http://localhost/test/index.php
+---
+2014/05/21 15:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "questions/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('questions/index')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=questions/index
+HTTP_REFERER=http://localhost/test/index.php
+---
+2014/05/21 15:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "questions/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('questions/index')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=questions/index
+HTTP_REFERER=http://localhost/test/index.php?r=questions/index
+---
+2014/05/21 15:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "answers/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('answers/index')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=answers/index
+HTTP_REFERER=http://localhost/test/index.php?r=questions/index
+---
+2014/05/21 16:02:04 [error] [php] Undefined variable: select (/var/www/test/protected/modules/Admin/views/answers/_form.php:21)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#1 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#6 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(79): AnswersController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (21)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (79)
+2014/05/21 16:07:05 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'text' in 'field list'. Выполнявшийся SQL-запрос: SELECT `id`, `text`
+FROM `questions`.
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (79)
+in /var/www/test/index.php (13)
+2014/05/21 16:07:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'text' in 'field list'. The SQL statement executed was: SELECT `id`, `text`
+FROM `questions`' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(79): CDbCommand->queryAll()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/answers/c...')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/test/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+HTTP_REFERER=http://localhost/test/index.php?r=Admin/answers/index
+---
+2014/05/21 16:07:49 [error] [php] Undefined variable: questions (/var/www/test/protected/modules/Admin/views/answers/_form.php:20)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#1 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#6 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(83): AnswersController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (20)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (83)
+2014/05/21 16:08:54 [error] [php] Array to string conversion (/var/www/test/protected/modules/Admin/views/answers/create.php:18)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#2 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(83): AnswersController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (83)
+in /var/www/test/index.php (13)
+2014/05/21 16:10:33 [error] [php] Invalid argument supplied for foreach() (/var/www/yii/framework/web/helpers/CHtml.php:2325)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#3 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#4 /var/www/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#6 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#7 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#8 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(83): AnswersController->render()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (23)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (83)
+2014/05/21 16:16:23 [error] [php] Invalid argument supplied for foreach() (/var/www/yii/framework/web/helpers/CHtml.php:2325)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#3 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#4 /var/www/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#6 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#7 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#8 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(87): AnswersController->render()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (23)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (87)
+2014/05/21 16:16:55 [error] [php] Invalid argument supplied for foreach() (/var/www/yii/framework/web/helpers/CHtml.php:2325)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#3 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#4 /var/www/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#6 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#7 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#8 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(87): AnswersController->render()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (23)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (87)
+2014/05/21 16:16:57 [error] [php] Invalid argument supplied for foreach() (/var/www/yii/framework/web/helpers/CHtml.php:2325)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#3 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#4 /var/www/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#6 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#7 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#8 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(87): AnswersController->render()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (23)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (87)
+2014/05/21 16:23:48 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CDbCriteria.id".' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('id', 'title')
+#1 /var/www/yii/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(80): CActiveRecord->findAll(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/answers/c...')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/test/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+HTTP_REFERER=http://localhost/test/index.php?r=Admin/answers/index
+---
+2014/05/21 16:24:34 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CDbCriteria.id".' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('id', 'title')
+#1 /var/www/yii/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(81): CActiveRecord->findAll(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/answers/c...')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/test/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+HTTP_REFERER=http://localhost/test/index.php?r=Admin/answers/index
+---
+2014/05/21 16:24:35 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CDbCriteria.id".' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('id', 'title')
+#1 /var/www/yii/framework/db/schema/CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(81): CActiveRecord->findAll(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/answers/c...')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/test/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+HTTP_REFERER=http://localhost/test/index.php?r=Admin/answers/index
+---
+2014/05/21 16:25:28 [error] [php] Undefined variable: ans (/var/www/test/protected/modules/Admin/controllers/AnswersController.php:85)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (85)
+in /var/www/test/index.php (13)
+2014/05/21 16:28:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "questions/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('questions/index')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=questions/index
+HTTP_REFERER=http://localhost/test/index.php
+---
+2014/05/21 16:28:57 [error] [php] Undefined variable: form (/var/www/test/protected/modules/Admin/views/default/index.php:10)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): DefaultController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): DefaultController->renderPartial()
+#2 /var/www/test/protected/modules/Admin/controllers/DefaultController.php(7): DefaultController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): DefaultController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): DefaultController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/default/index
+in /var/www/test/protected/modules/Admin/views/default/index.php (10)
+in /var/www/test/protected/modules/Admin/controllers/DefaultController.php (7)
+in /var/www/test/index.php (13)
+2014/05/21 16:31:29 [error] [php] Undefined variable: questions (/var/www/test/protected/modules/Admin/views/answers/_form.php:21)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#1 /var/www/test/protected/modules/Admin/views/answers/create.php(18): AnswersController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#6 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(86): AnswersController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): AnswersController->actionCreate()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (21)
+in /var/www/test/protected/modules/Admin/views/answers/create.php (18)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (86)
+2014/05/21 16:44:36 [error] [php] Undefined index: question (/var/www/test/protected/modules/Admin/controllers/AnswersController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (72)
+in /var/www/test/index.php (13)
+2014/05/21 16:44:53 [error] [php] Undefined index: question (/var/www/test/protected/modules/Admin/controllers/AnswersController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (72)
+in /var/www/test/index.php (13)
+2014/05/21 16:45:19 [error] [php] Undefined index: question (/var/www/test/protected/modules/Admin/controllers/AnswersController.php:72)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/create
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (72)
+in /var/www/test/index.php (13)
+2014/06/14 08:24:09 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/test/protected/views/layouts/main.php:53)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/test/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/test/protected/controllers/SiteController.php(33): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/index
+in /var/www/test/protected/views/layouts/main.php (53)
+in /var/www/test/protected/views/layouts/column1.php (6)
+in /var/www/test/protected/controllers/SiteController.php (33)
+2014/06/14 08:24:52 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/test/protected/views/layouts/main.php:53)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/test/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/test/protected/controllers/SiteController.php(33): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/
+in /var/www/test/protected/views/layouts/main.php (53)
+in /var/www/test/protected/views/layouts/column1.php (6)
+in /var/www/test/protected/controllers/SiteController.php (33)
+2014/06/14 08:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/test/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test/index.php?r=admin
+---
+2014/06/14 08:31:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /var/www/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(111): CDataProvider->getData()
+#12 /var/www/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /var/www/test/protected/modules/Admin/views/questions/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/test/p...')
+#17 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/test/p...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/test/p...', Array, true)
+#19 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /var/www/test/protected/modules/Admin/controllers/QuestionsController.php(128): CController->render('index', Array)
+#21 /var/www/yii/framework/web/actions/CInlineAction.php(49): QuestionsController->actionIndex()
+#22 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#31 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/questions...')
+#32 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#33 /var/www/test/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/test/index.php?r=Admin/questions/index
+---
+2014/06/14 08:34:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /var/www/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(111): CDataProvider->getData()
+#12 /var/www/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /var/www/test/protected/modules/Admin/views/questions/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/test/p...')
+#17 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/test/p...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/test/p...', Array, true)
+#19 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /var/www/test/protected/modules/Admin/controllers/QuestionsController.php(128): CController->render('index', Array)
+#21 /var/www/yii/framework/web/actions/CInlineAction.php(49): QuestionsController->actionIndex()
+#22 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#31 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/questions...')
+#32 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#33 /var/www/test/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/test/index.php?r=Admin/questions/index
+---
+2014/06/14 08:49:59 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'text' in 'field list'. Выполнявшийся SQL-запрос: 
+			SELECT id, text, (SELECT id, idQuestion, text, accept FROM answers WHERE answers.idQuestion = questions.id) FROM questions
+			.
+in /var/www/test/protected/controllers/SiteController.php (79)
+in /var/www/test/index.php (13)
+2014/06/14 08:49:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'text' in 'field list'. The SQL statement executed was: 
+			SELECT id, text, (SELECT id, idQuestion, text, accept FROM answers WHERE answers.idQuestion = questions.id) FROM questions
+			' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/test/protected/controllers/SiteController.php(79): CDbCommand->queryAll()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('test')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/test/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/test/index.php?r=site/test
+HTTP_REFERER=http://localhost/test/index.php
+---
+2014/06/14 08:50:22 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). Выполнявшийся SQL-запрос: 
+			SELECT id, title, (SELECT id, idQuestion, text, accept FROM answers WHERE answers.idQuestion = questions.id) FROM questions
+			.
+in /var/www/test/protected/controllers/SiteController.php (79)
+in /var/www/test/index.php (13)
+2014/06/14 08:50:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: 
+			SELECT id, title, (SELECT id, idQuestion, text, accept FROM answers WHERE answers.idQuestion = questions.id) FROM questions
+			' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/test/protected/controllers/SiteController.php(79): CDbCommand->queryAll()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('test')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/test/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/test/index.php?r=site/test
+HTTP_REFERER=http://localhost/test/index.php
+---
+2014/06/14 08:52:32 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous. Выполнявшийся SQL-запрос: 
+			SELECT id, title FROM questions LEFT OUTER JOIN answers ON answers.idQuestion = questions.id
+			.
+in /var/www/test/protected/controllers/SiteController.php (79)
+in /var/www/test/index.php (13)
+2014/06/14 08:52:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous. The SQL statement executed was: 
+			SELECT id, title FROM questions LEFT OUTER JOIN answers ON answers.idQuestion = questions.id
+			' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/test/protected/controllers/SiteController.php(79): CDbCommand->queryAll()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('test')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/test/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/test/index.php?r=site/test
+HTTP_REFERER=http://localhost/test/index.php
+---
+2014/06/14 08:58:52 [error] [php] Array to string conversion (/var/www/test/protected/controllers/SiteController.php:80)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (80)
+in /var/www/test/index.php (13)
+2014/06/14 09:14:55 [error] [php] Undefined offset: 0 (/var/www/test/protected/controllers/SiteController.php:82)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (82)
+in /var/www/test/index.php (13)
+2014/06/14 09:15:41 [error] [php] Undefined variable: questions (/var/www/test/protected/modules/Admin/views/answers/_form.php:21)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#1 /var/www/test/protected/modules/Admin/views/answers/update.php(21): AnswersController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): AnswersController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): AnswersController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): AnswersController->renderPartial()
+#6 /var/www/test/protected/modules/Admin/controllers/AnswersController.php(110): AnswersController->render()
+#7 unknown(0): AnswersController->actionUpdate()
+#8 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): AnswersController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): AnswersController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): AnswersController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): AnswersController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=Admin/answers/update&id=2
+in /var/www/test/protected/modules/Admin/views/answers/_form.php (21)
+in /var/www/test/protected/modules/Admin/views/answers/update.php (21)
+in /var/www/test/protected/modules/Admin/controllers/AnswersController.php (110)
+2014/06/14 09:33:06 [error] [php] Undefined variable: i (/var/www/test/protected/views/site/test.php:10)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (10)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 09:38:46 [error] [php] Illegal string offset 'text' (/var/www/test/protected/views/site/test.php:20)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (20)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 09:56:00 [error] [php] Undefined offset: 10 (/var/www/test/protected/views/site/test.php:14)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (14)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 09:56:46 [error] [php] Undefined offset: 11 (/var/www/test/protected/views/site/test.php:15)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (15)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:00:09 [error] [php] Undefined offset: 10 (/var/www/test/protected/views/site/test.php:18)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (18)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:00:46 [error] [php] Undefined offset: 10 (/var/www/test/protected/views/site/test.php:19)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (19)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:01:37 [error] [php] Undefined offset: 10 (/var/www/test/protected/views/site/test.php:21)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (21)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:07:25 [error] [php] Undefined variable: current (/var/www/test/protected/views/site/test.php:20)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (20)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:38:19 [error] [php] Undefined offset: 0 (/var/www/test/protected/views/site/test.php:8)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (8)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:38:46 [error] [php] Indirect modification of overloaded element of CHttpSession has no effect (/var/www/test/protected/views/site/test.php:8)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (8)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:45:27 [error] [php] Indirect modification of overloaded element of CHttpSession has no effect (/var/www/test/protected/views/site/test.php:13)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (13)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:46:41 [error] [php] Indirect modification of overloaded element of CHttpSession has no effect (/var/www/test/protected/views/site/test.php:14)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(85): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (14)
+in /var/www/test/protected/controllers/SiteController.php (85)
+in /var/www/test/index.php (13)
+2014/06/14 10:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "final".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('final')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('final')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/final')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/test/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test/index.php?r=site/final
+HTTP_REFERER=http://localhost/test/index.php?r=site/test
+---
+2014/06/14 10:53:34 [error] [php] Undefined variable: session (/var/www/test/protected/views/site/test.php:11)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(89): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(13): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (11)
+in /var/www/test/protected/controllers/SiteController.php (89)
+in /var/www/test/index.php (13)
+2014/06/18 18:19:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/test/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/test/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/test/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/test/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/test/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/test/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/test/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/test/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/test/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /var/www/test/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/test/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/test/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/test/framework/zii/widgets/CBaseListView.php(111): CDataProvider->getData()
+#12 /var/www/test/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/test/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/test/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /var/www/test/protected/modules/Admin/views/questions/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /var/www/test/framework/web/CBaseController.php(126): require('/var/www/test/p...')
+#17 /var/www/test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/test/p...', Array, true)
+#18 /var/www/test/framework/web/CController.php(869): CBaseController->renderFile('/var/www/test/p...', Array, true)
+#19 /var/www/test/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /var/www/test/protected/modules/Admin/controllers/QuestionsController.php(128): CController->render('index', Array)
+#21 /var/www/test/framework/web/actions/CInlineAction.php(49): QuestionsController->actionIndex()
+#22 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/test/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/test/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/test/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/test/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/test/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/test/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/test/framework/web/CWebApplication.php(282): CController->run('index')
+#31 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController('Admin/questions...')
+#32 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#33 /var/www/test/index.php(12): CApplication->run()
+#34 {main}
+REQUEST_URI=/test/index.php?r=Admin/questions/index
+HTTP_REFERER=http://localhost/test/index.php?r=Admin/default/index
+---
+2014/06/18 18:29:01 [error] [php] Undefined variable: data (/var/www/test/protected/controllers/SiteController.php:101)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (101)
+in /var/www/test/index.php (12)
+2014/06/18 18:31:27 [error] [php] Undefined offset: 1 (/var/www/test/protected/controllers/SiteController.php:91)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (91)
+in /var/www/test/index.php (12)
+2014/06/18 18:31:31 [error] [php] Undefined offset: 0 (/var/www/test/protected/controllers/SiteController.php:102)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (102)
+in /var/www/test/index.php (12)
+2014/06/18 18:36:09 [error] [php] Undefined variable: current (/var/www/test/protected/views/site/test.php:27)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(109): SiteController->render()
+#3 /var/www/test/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (27)
+in /var/www/test/protected/controllers/SiteController.php (109)
+in /var/www/test/index.php (12)
+2014/06/18 18:36:12 [error] [php] Undefined variable: current (/var/www/test/protected/views/site/test.php:27)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(109): SiteController->render()
+#3 /var/www/test/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (27)
+in /var/www/test/protected/controllers/SiteController.php (109)
+in /var/www/test/index.php (12)
+2014/06/18 18:37:02 [error] [php] Undefined variable: data (/var/www/test/protected/controllers/SiteController.php:92)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (92)
+in /var/www/test/index.php (12)
+2014/06/18 19:19:13 [error] [php] setcookie() expects parameter 2 to be string, array given (/var/www/test/framework/web/CHttpRequest.php:1380)
+Stack trace:
+#0 /var/www/test/framework/collections/CMap.php(330): CCookieCollection->add()
+#1 /var/www/test/protected/controllers/SiteController.php(92): CCookieCollection->offsetSet()
+#2 /var/www/test/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#3 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#5 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/controllers/SiteController.php (92)
+in /var/www/test/index.php (12)
+2014/06/18 19:24:44 [error] [php] Undefined variable: session (/var/www/test/protected/views/site/test.php:9)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(89): SiteController->render()
+#3 /var/www/test/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (9)
+in /var/www/test/protected/controllers/SiteController.php (89)
+in /var/www/test/index.php (12)
+2014/06/18 19:25:36 [error] [php] Undefined variable: session (/var/www/test/protected/views/site/test.php:14)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(89): SiteController->render()
+#3 /var/www/test/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (14)
+in /var/www/test/protected/controllers/SiteController.php (89)
+in /var/www/test/index.php (12)
+2014/06/18 19:25:54 [error] [php] Undefined variable: session (/var/www/test/protected/views/site/test.php:14)
+Stack trace:
+#0 /var/www/test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/test/protected/controllers/SiteController.php(89): SiteController->render()
+#3 /var/www/test/framework/web/actions/CInlineAction.php(49): SiteController->actionTest()
+#4 /var/www/test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/test/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/test/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/test/index.php(12): CWebApplication->run()
+REQUEST_URI=/test/index.php?r=site/test
+in /var/www/test/protected/views/site/test.php (14)
+in /var/www/test/protected/controllers/SiteController.php (89)
+in /var/www/test/index.php (12)
